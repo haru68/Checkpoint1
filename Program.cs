@@ -69,7 +69,7 @@ namespace Sartori_Checkpoint1
             int IntegersSum = SummedValueOfArray(Array);
             int ArrayLength = Array.Length;
 
-            double MeanOfArray = Convert.ToDouble(IntegersSum / ArrayLength);
+            double MeanOfArray = Convert.ToDouble(IntegersSum) / ArrayLength;
 
             return MeanOfArray;
         }
