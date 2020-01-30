@@ -24,7 +24,6 @@ namespace Sartori_Checkpoint1
 
         public static int[] SetArray()
         {
-            // Create a new array of big size to store the values.
             int[] LargeIntegersArray = new int[256];
             int ArrayCounter = 0;
             for (ArrayCounter = 0; ArrayCounter < 256; ArrayCounter++)
@@ -41,8 +40,6 @@ namespace Sartori_Checkpoint1
                 }
             }
 
-            // Create a second array of a size which corresponds to the size of the number of integers 
-            // & use the values of the big arrays to record them in this array.
             int[] IntegersArray = new int[ArrayCounter];
             for (int i = 0; i < ArrayCounter; i++)
             {
@@ -53,7 +50,6 @@ namespace Sartori_Checkpoint1
 
         public static int SummedValueOfArray(int[] Array)
         {
-            // Fait la somme des éléments présent dans le tableau en itérant sur chacun des éléments du tableau et en les additionnant.
             int IntegersArraySum = 0;
             foreach (int item in Array)
             {
@@ -65,7 +61,6 @@ namespace Sartori_Checkpoint1
 
         public static double MeanValueOfArray(int[] Array)
         {
-            // Pour faire la moyenne des valeurs dans le tableau, utilise la somme des éléments du tableau divisé par la longueur du tableau.
             int IntegersSum = SummedValueOfArray(Array);
             int ArrayLength = Array.Length;
 
@@ -76,7 +71,6 @@ namespace Sartori_Checkpoint1
 
         public static int[] SortedArray(int[] ArrayToSort)
         {
-            // Sort array in ascending order.
             int arraylength = ArrayToSort.Length;
 
             for (int i = 0; i < arraylength; i++)
