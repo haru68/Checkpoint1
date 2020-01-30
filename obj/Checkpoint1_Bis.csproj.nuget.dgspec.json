@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Sartori\\Documents\\WCS\\Checkpoint\\Bis\\Checkpoint1_Bis\\Checkpoint1_Bis.csproj": {}
+    "C:\\Users\\Sartori\\Documents\\WCS\\Checkpoint\\Checkpoint1\\Checkpoint1_Bis.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Sartori\\Documents\\WCS\\Checkpoint\\Bis\\Checkpoint1_Bis\\Checkpoint1_Bis.csproj": {
+    "C:\\Users\\Sartori\\Documents\\WCS\\Checkpoint\\Checkpoint1\\Checkpoint1_Bis.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Sartori\\Documents\\WCS\\Checkpoint\\Bis\\Checkpoint1_Bis\\Checkpoint1_Bis.csproj",
+        "projectUniqueName": "C:\\Users\\Sartori\\Documents\\WCS\\Checkpoint\\Checkpoint1\\Checkpoint1_Bis.csproj",
         "projectName": "Checkpoint1_Bis",
-        "projectPath": "C:\\Users\\Sartori\\Documents\\WCS\\Checkpoint\\Bis\\Checkpoint1_Bis\\Checkpoint1_Bis.csproj",
+        "projectPath": "C:\\Users\\Sartori\\Documents\\WCS\\Checkpoint\\Checkpoint1\\Checkpoint1_Bis.csproj",
         "packagesPath": "C:\\Users\\Sartori\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Sartori\\Documents\\WCS\\Checkpoint\\Bis\\Checkpoint1_Bis\\obj\\",
+        "outputPath": "C:\\Users\\Sartori\\Documents\\WCS\\Checkpoint\\Checkpoint1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Sartori\\AppData\\Roaming\\NuGet\\NuGet.Config",
