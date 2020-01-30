@@ -6,33 +6,33 @@ namespace Sartori_Checkpoint1
     {
         static void Main(string[] args)
         {
-            int[] NewArray = SetArray();
+            int[] newArray = SetArray();
 
-            int SumOfArray = SummedValueOfArray(NewArray);
-            Console.WriteLine("Sum of the elements in the array: " + SumOfArray);
+            int sumOfArray = SummedValueOfArray(newArray);
+            Console.WriteLine("Sum of the elements in the array: " + sumOfArray);
 
-            double MeanOfArray = MeanValueOfArray(NewArray);
-            Console.WriteLine("Mean of the array: " + MeanOfArray);
+            double meanOfArray = MeanValueOfArray(newArray);
+            Console.WriteLine("Mean of the array: " + meanOfArray);
 
             Console.WriteLine();
             Console.WriteLine("Sorted Array:");
-            int[] ArraySort = SortedArray(NewArray);
-            DisplayArray(ArraySort);
+            int[] arraySort = SortedArray(newArray);
+            DisplayArray(arraySort);
 
 
         }
 
         public static int[] SetArray()
         {
-            int[] LargeIntegersArray = new int[256];
-            int ArrayCounter = 0;
-            for (ArrayCounter = 0; ArrayCounter < 256; ArrayCounter++)
+            int[] largeIntegersArray = new int[256];
+            int arrayCounter = 0;
+            for (arrayCounter = 0; arrayCounter < 256; arrayCounter++)
             {
                 Console.WriteLine("Please, enter a new integer to add in the array. A negative integer ends the initialization of the array.");
-                int ArrayNumber = Convert.ToInt32(Console.ReadLine());
-                if (ArrayNumber >= 0)
+                int arrayNumber = Convert.ToInt32(Console.ReadLine());
+                if (arrayNumber >= 0)
                 {
-                    LargeIntegersArray[ArrayCounter] = ArrayNumber;
+                    largeIntegersArray[arrayCounter] = arrayNumber;
                 }
                 else
                 {
@@ -40,57 +40,57 @@ namespace Sartori_Checkpoint1
                 }
             }
 
-            int[] IntegersArray = new int[ArrayCounter];
-            for (int i = 0; i < ArrayCounter; i++)
+            int[] integersArray = new int[arrayCounter];
+            for (int i = 0; i < arrayCounter; i++)
             {
-                IntegersArray[i] = LargeIntegersArray[i];
+                integersArray[i] = largeIntegersArray[i];
             }
-            return IntegersArray;
+            return integersArray;
         }
 
         public static int SummedValueOfArray(int[] Array)
         {
-            int IntegersArraySum = 0;
+            int integersArraySum = 0;
             foreach (int item in Array)
             {
-                IntegersArraySum = IntegersArraySum + item;
+                integersArraySum = integersArraySum + item;
             }
 
-            return IntegersArraySum;
+            return integersArraySum;
         }
 
-        public static double MeanValueOfArray(int[] Array)
+        public static double MeanValueOfArray(int[] array)
         {
-            int IntegersSum = SummedValueOfArray(Array);
-            int ArrayLength = Array.Length;
+            int integersSum = SummedValueOfArray(array);
+            int arrayLength = array.Length;
 
-            double MeanOfArray = Convert.ToDouble(IntegersSum) / ArrayLength;
+            double meanOfArray = Convert.ToDouble(integersSum) / arrayLength;
 
-            return MeanOfArray;
+            return meanOfArray;
         }
 
-        public static int[] SortedArray(int[] ArrayToSort)
+        public static int[] SortedArray(int[] arrayToSort)
         {
-            int arraylength = ArrayToSort.Length;
+            int arraylength = arrayToSort.Length;
 
             for (int i = 0; i < arraylength; i++)
             {
                 for (int j = 0; j < arraylength -1; j++)
                 {
-                    if (ArrayToSort[i] < ArrayToSort[j])
+                    if (arrayToSort[i] < arrayToSort[j])
                     {
-                        int temp = ArrayToSort[j];
-                        ArrayToSort[j] = ArrayToSort[i];
-                        ArrayToSort[i] = temp;
+                        int temp = arrayToSort[j];
+                        arrayToSort[j] = arrayToSort[i];
+                        arrayToSort[i] = temp;
                     }
                 }
             }
-            return ArrayToSort;
+            return arrayToSort;
         }
 
-        public static void DisplayArray(int[] CurrentArray)
+        public static void DisplayArray(int[] currentArray)
         {
-            foreach (int item in CurrentArray)
+            foreach (int item in currentArray)
             {
                 Console.WriteLine(item);
             }
