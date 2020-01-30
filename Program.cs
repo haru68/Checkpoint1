@@ -77,7 +77,20 @@ namespace Sartori_Checkpoint1
         public static int[] SortedArray(int[] ArrayToSort)
         {
             // Sort array in ascending order.
-            Array.Sort(ArrayToSort);
+            int arraylength = ArrayToSort.Length;
+
+            for (int i = 0; i < arraylength; i++)
+            {
+                for (int j = 0; j < arraylength -1; j++)
+                {
+                    if (ArrayToSort[i] < ArrayToSort[j])
+                    {
+                        int temp = ArrayToSort[j];
+                        ArrayToSort[j] = ArrayToSort[i];
+                        ArrayToSort[i] = temp;
+                    }
+                }
+            }
             return ArrayToSort;
         }
 
